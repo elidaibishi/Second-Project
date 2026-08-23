@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     width: 100%;
     min-height: 5000px;
@@ -16,6 +15,10 @@ body{
     width: 100%;
     height: 90px;
     background-color: rgb(16, 16, 16); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header{
@@ -102,6 +105,7 @@ nav ul li a:hover{
     width: 100%;
     height: 600px;
     overflow: hidden;
+    margin-top: 90px;
 }
 
 .background{
@@ -142,7 +146,7 @@ nav ul li a:hover{
 }
 
 .text h1 p{
-    color: #d9a928;
+    color:  #ffae01;
     font-size: 50px;
     font-weight: bold;
     margin: 0;
@@ -167,10 +171,11 @@ nav ul li a:hover{
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
+    /* border-radius: 5px; */
 }
 
 .button-1{
-    background-color: #d9a928;
+    background-color: #ffae01;
     color: #111;
 }
 
@@ -181,7 +186,7 @@ nav ul li a:hover{
 }
 
 .button-1:hover{
-    background-color:  #f0c34d;
+    background-color: #eda200;
 }
 
 .button-2:hover{
@@ -244,3 +249,192 @@ nav ul li a:hover{
     line-height: 1.5;
     margin: 0;
 }
+
+#section-4{
+    width: 100%;
+    padding: 60px 50px;
+    background-color: white;
+    scroll-margin-top: 90px;
+}
+
+.products-tittle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products-tittle h2{
+    color: #161616;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.products-line{
+    width: 40px;
+    height: 5px;
+    background-color: #ffae01;
+    margin: 0 auto 15px auto;
+}
+
+.products-tittle p{
+    color: #555;
+    font-size: 15px;
+    margin: 0;
+}
+
+.products{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.product{
+    flex: 1;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+
+.product-image{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-text{
+    padding: 20px;
+    text-align: center;
+}
+
+.product-text h3{
+    color: #161616;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.product-text p{
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.product-button{
+    display: inline-block;
+    background-color: #ffae01;
+    color: black;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-button:hover{
+    background-color: #eda200;
+}
+
+.all-products{
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    background-color: #080d10;
+    color: white;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.all-products:hover{
+    background-color: #222;
+}
+
+
+
+#section-5{
+    width: 100%;
+    padding: 70px 50px;
+    background-color: rgb(16, 16, 16);
+    scroll-margin-top: 90px;
+}
+
+.about{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.about-text{
+    width: 40%;
+}
+
+.about-text h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.about-line{
+    width: 40px;
+    height: 5px;
+    background-color:  #ffae01;
+    margin-bottom: 25px;
+}
+
+.about-text p{
+    color: #d8d8d8;
+    font-size: 15px;
+    line-height: 1.5;
+    /* margin-bottom: 0 0 35px 0; */
+    margin-bottom: 30px;
+}
+
+.about-button{
+    display: inline-block;
+    background-color:  #ffae01;
+    color: white;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-button:hover{
+    background-color:  #eda200;
+}
+
+.about-image{
+    width: 55%;
+}
+
+.about-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
