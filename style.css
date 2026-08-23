@@ -438,3 +438,94 @@ nav ul li a:hover{
     display: block;
 }
 
+#section-6{
+    width: 100%;
+    padding: 55px 50px 65px 50px;
+    background-color: #f5f5f3;
+    scroll-margin-top: 90px;
+}
+
+.services-title{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.services-title h2{
+    color: #161616;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.services-line{
+    width: 40px;
+    height: 5px;
+    background-color: #ffae01;
+    margin: 0 auto;
+}
+
+.services{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.service{
+    flex: 1;
+    min-height: 280px;
+    padding: 25px 25px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+}
+
+.service-ikon{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 16px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #d99b00;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.service-ikon img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+.service h3{
+    color: #161616;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.service p{
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 220px;
+}
+
+
+
+
+
+
+
+
+
