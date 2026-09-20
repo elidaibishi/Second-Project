@@ -2,78 +2,265 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="produktet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Produktet</title>
 </head>
 <body>
-    <section id="product-section">
-        <div class="products-tittle">
-            <h2>PRODUKTET TONA</h2>
-            <div class="products-line"></div>
-            <p>
-                Zbuloni produktet tona të dizajnuara për cilësi,
-                siguri dhe rehati.
-            </p>
-        </div>
 
-        <div class="products">
-            <div class="product">
-                <div class="product-image">
-                    <img src="images/dyer-hyrese.jpeg" alt="DYER HYRËSE">
-                </div>
+    <header>
 
-                <div class="product-text">
-                    <h3>DYER HYRËSE</h3>
-                    <p>
-                        Dyer të sigurta dhe elegante për çdo shtëpi.
-                    </p>
-                    <a href="" class="product-button">SHIKO MË SHUMË</a>
-                </div>
-            </div>
+        <div class="brand">
+            <img src="images/logo.png" class="logo" alt="NTP BLERI">
 
-            <div class="product">
-                <div class="product-image">
-                    <img src="images/dritare-pvc.jpeg" alt="DRITARE PVC">
-                </div>
-
-                <div class="product-text">
-                    <h3>DRITARE PVC</h3>
-                    <p>
-                        Izolim i shkëlqyer termik dhe akustik.
-                    </p>
-                    <a href="" class="product-button">SHIKO MË SHUMË</a>
-                </div>
-            </div>
-
-             <div class="product">
-                <div class="product-image">
-                    <img src="images/dyer-rreshqitese.jpeg" alt="DYER RRËSHQITËSE">
-                </div>
-
-                <div class="product-text">
-                    <h3>DYER RRËSHQITËSE</h3>
-                    <p>
-                        Hapësirë, dritë dhe dizajn modern.
-                    </p>
-                    <a href="" class="product-button">SHIKO MË SHUMË</a>
-                </div>
-            </div>
-
-             <div class="product">
-                <div class="product-image">
-                    <img src="images/rolo-grila.jpeg" alt="ROLO DHE GRILA">
-                </div>
-
-                <div class="product-text">
-                    <h3>ROLO DHE GRILA</h3>
-                    <p>
-                        Zgjidhje praktike për siguri dhe privatësi.
-                    </p>
-                    <a href="" class="product-button">SHIKO MË SHUMË</a>
-                </div>
+            <div class="brand-text">
+                <h1>NTP BLERI</h1>
+                <h2>DYER & DRITARE</h2>
             </div>
         </div>
 
-    </section>
+        <nav>
+            <ul> 
+                <li><a href ="index.html">BALLINA</a></li>
+                <li><a href ="index.html#section-4">PRODUKTET</a></li>
+                <li><a href ="index.html#section-5">RRETH NESH</a></li>
+                <li><a href ="index.html#section-6">SHËRBIMET</a></li>
+                <li><a href ="index.html#section-7">GALERIA</a></li>
+                <li><a href ="index.html#footer">KONTAKTI</a></li>
+            </ul>
+        </nav>
+
+        <a href="oferte.html" class="buton">KËRKO OFERTË</a>
+                
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="content">
+                <span class="small-title">
+                    KOLEKSIONI NTP BLERI
+                </span>
+                <h1>
+                    PRODUKTE TË KRIJUARA <br>
+                    PËR <strong> HAPËSIREN TUAJ.</strong>
+                </h1>
+                
+                <div class="gold-line"></div>
+                <p>
+                    Zbuloni produktet tona të dizajnuara për të
+                    kombinuar funksionalitetin, sigurinë dhe
+                    estetikën në çdo projekt.
+                </p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-top">
+                <div class="products-heading-left">
+                    <span>
+                        PRODUKTET TONA
+                    </span>
+
+                    <h2>
+                        ZGJIDHJE TË MENDUARA <br>
+                        PËR <strong>HAPËSIREN TUAJ.</strong>
+
+                    </h2>
+                </div>
+
+                <div class="products-heading-right">
+                    <div class="heading-line"></div>
+                    <p>
+                        Nga dyert dhe dritaret deri te zgjidhjet
+                        mbrojtëse, çdo produkt është zgjedhur me
+                        fokus në cilësi, funksionalitet dhe dizajn.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <article class="product">
+                    <div class="product-image">
+                        <img src="images/dyer-hyrese.jpeg" alt="Dyer hyrese">
+                        <div class="image-overlay">
+                            <a href="dyer-hyrese.html">SHIKO PRODUKTIN <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">DYER</span>
+                        <h3>Dyer hyrëse</h3>
+                        <p>
+                            Dyer të sigurta dhe elegante,
+                            të përshtatshme për çdo shtëpi
+                            dhe objekt.
+                        </p>
+                        <a href="dyer-hyrese.html" class="product-link">SHIKO MË SHUMË <span>→</span> </a>
+
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <img src="images/dritare-pvc.jpeg" alt="Dritare PVC">
+                        <div class="image-overlay">
+                            <a href="dritare-pvc.html">SHIKO PRODUKTIN <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">DRITARE</span>
+                        <h3>Dritare PVC</h3>
+                        <p>
+                            Izolim termik dhe akustik
+                            për komfort dhe efikasitet
+                            gjatë gjithë vitit.
+                        </p>
+                        <a href="dritare-pvc.html" class="product-link">SHIKO MË SHUMË <span>→</span> </a>
+
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <img src="images/dyer-rreshqitese.jpeg" alt="Dyer rreshqitese">
+                        <div class="image-overlay">
+                            <a href="dyer-rreshqitese.html">SHIKO PRODUKTIN <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">DYER</span>
+                        <h3>Dyer Rrëshqitëse</h3>
+                        <p>
+                            Zgjidhje moderne që sjellin
+                            më shumë dritë dhe hapësirë
+                            në ambientin tuaj.
+                        </p>
+                        <a href="dyer-rreshqitese.html" class="product-link">SHIKO MË SHUMË <span>→</span> </a>
+
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <img src="images/rolo-grila.jpeg" alt="Rolo dhe grila">
+                        <div class="image-overlay">
+                            <a href="rolo-grila.html">SHIKO PRODUKTIN <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">MBROJTJE</span>
+                        <h3>Rolo dhe Grila
+                        </h3>
+                        <p>
+                            Privatësi, siguri dhe kontroll
+                            i dritës me zgjidhje praktike
+                            dhe moderne.
+                        </p>
+                        <a href="rolo-grila.html" class="product-link">SHIKO MË SHUMË <span>→</span> </a>
+
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <img src="images/prudukti-5" alt="Produkt i ri">
+                        <div class="image-overlay">
+                            <a href="produkti-5.html">SHIKO PRODUKTIN <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Produkt</span>
+                        <h3>P</h3>
+                        
+                        <p>
+                            .
+                        </p>
+                        <a href="produkti-5.html" class="product-link">SHIKO MË SHUMË <span>→</span> </a>
+
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <img src="images/prudukti-6" alt="Produkt i ri">
+                        <div class="image-overlay">
+                            <a href="produkti-6.html">SHIKO PRODUKTIN <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Produkt</span>
+                        <h3>P</h3>
+                        
+                        <p>
+                            .
+                        </p>
+                        <a href="produkti-6.html" class="product-link">SHIKO MË SHUMË <span>→</span> </a>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="products-ask">
+            <div class="ask-content">
+                <span>NTP BLERI</span>
+                <h2>Keni një projekt <strong> në mëndje?</strong></h2>
+                <p>
+                    Na kontaktoni dhe së bashku gjejmë
+                    zgjidhjen më të përshtatshme për
+                    projektin tuaj.
+                </p>
+                <a href="oferte.html">KËRKO OFERTË <span>→</span></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="NTP BLERI">
+                <div class="footer-text">
+                    <h2>NTP BLERI</h2>
+                    <p>DYER & DRITARE</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>LINKE TË SHPEJTA</h3>
+
+                <a href="index.html#section-2">BALLINA</a>
+                <a href="index.html#section-4">PRODUKTET</a>
+                <a href="index.html#section-5">RRETH NESH</a>
+                <a href="index.html#section-6">SHËRBIMET</a>
+                <a href="index.html#section-7">GALERIA</a>
+                <a href="index.html#footer">KONTAKTI</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>KONTAKTI</h3>
+                <p>📞 +383 45 475 722</p>
+                <p>📞 +383 44 240 709</p>
+                <p>✉  info@ntpbleri.com</p>
+                <p>📍 Lipjan, Kosovë</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 NTP BLERI. Të gjitha të drejtat e rezervuara.
+        </div>
+
+    </footer>
+
+
+    
 </body>
 </html>
