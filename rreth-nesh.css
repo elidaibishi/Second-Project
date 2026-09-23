@@ -356,3 +356,213 @@ nav ul li a:hover{
     padding: 20px 0;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
+
+@media(min-width: 769px) and (max-width: 1024px){
+    #section-1{
+        height: auto;
+        min-height: 90px;
+    }
+
+    header{
+        height: auto;
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .buton{
+        margin: 0 auto;
+    }
+
+    .about{
+        padding: 150px 30px 60px;
+    }
+
+    .about-text h1{
+        font-size: 40px;
+    }
+
+    .about-content{
+        padding: 60px 30px;
+    }
+
+    .about-container{
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-content, .about-text{
+        width: 50%;
+    }
+
+    .about-image img{
+        height: 320px;
+    }
+
+    .values{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .value{
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .about-values{
+        padding: 60px 30px;
+    }
+
+    .about-europe{
+        padding: 60px 30px;
+    }
+
+    .about-contact{
+        padding: 30px 40px 0;
+    }
+
+    .about-contact-content{
+        gap: 30px;
+    }
+}
+
+@media(max-width: 768px){
+    #section-1{
+        height: auto;
+        min-height: 90px
+    }
+
+    header{
+        height: auto;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .brand{
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .buton{
+        margin: 0 auto;
+    }
+
+    .about{
+        padding: 180px 20px 50px;
+    }
+
+    .about-text h1{
+        font-size: 35px;
+    }
+
+    .about-text p{
+        font-size: 17px;
+    }
+
+    .about-content{
+        padding: 50px 20px;
+    }
+
+    .about-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-image,
+    .about-content, .about-text{
+        width: 100%;
+    }
+
+    .about-image img{
+        height: 300px;
+    }
+
+    .about-content, .about-text h2{
+        font-size: 28px;
+    }
+
+    .about-values{
+        padding: 50px 20px;
+    }
+
+    .about-title{
+        margin-bottom: 30px;
+    }
+
+    .about-title h2{
+        font-size: 28px;
+    }
+
+    .about-title p{
+        font-size: 17px;
+    }
+
+    .values{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .value{
+        width: 100%;
+        min-height: auto;
+        padding: 30px 20px;
+    }
+
+    .about-europe{
+        padding: 50px 20px;
+    }
+
+    .europe-text{
+        max-width: 100%;
+    }
+
+    .europe-text h2{
+        font-size: 28px;
+    }
+
+    .about-contact{
+        padding: 40px 20px 0;
+    }
+
+    .about-contact-content{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 25px;
+        padding-bottom: 30px;
+    }
+
+    .about-contact-text h2{
+        font-size: 24px;
+    }
+
+    .about-contact a{
+        text-align: center;
+        padding: 16px 25px;
+    }
+
+    .copyright{
+        font-size: 14px;
+        padding: 20px 0;
+    }
+}

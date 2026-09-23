@@ -12,7 +12,8 @@ body{
 
 #section-1{
     width: 100%;
-    height: 90px;
+    min-height: 90px;
+    height: auto;
     background-color: rgb(16, 16, 16); 
     position: fixed;
     top: 0;
@@ -855,12 +856,135 @@ nav ul li a:hover{
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+@media (min-width: 769px) and (max-width: 1024px){
+    header{
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .buton{
+        margin: 0 auto;
+    }
+
+    #section-2{
+        margin-top: 90px;
+        height: 550px;
+    }
+
+    .text{
+        left: 40px;
+        width: 500px;
+    }
+
+    .text h1{
+        font-size: 42px;
+    }
+
+    .features{
+        flex-wrap: wrap;
+    }
+
+    .feature{
+        flex: 0 0 50%;
+        border-right: none;
+    }
+
+    .products{
+        flex-wrap: wrap;
+    }
+
+    .product{
+        flex: 0 0 calc(50% - 13px);
+    }
+
+    .about{
+        gap: 40px;
+    }
+
+    .about-text{
+        width: 45%;
+    }
+
+    .about-image{
+        width: 55%;
+    }
+
+    .services{
+        flex-wrap: wrap;
+    }
+
+    .service{
+        flex: 0 0 calc(50% - 13px);
+    }
+
+    .gallery{
+        flex-wrap: wrap;
+    }
+
+    .gallery-image{
+        flex: 0 0 calc(50% - 15px);
+    }
+
+    .why-us{
+        flex-wrap: wrap;
+    }
+
+    .why-item{
+        flex: 0 0 50%;
+        border-right: none;
+    }
+
+    .offer-section{
+        padding: 25px 40px;
+        gap: 25px;
+    }
+
+    .offer-text h2{
+        font-size: 22px;
+    }
+
+    .offer-text p{
+        font-size: 16px;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px 30px;
+    }
+}
+
 @media (max-width:768px){
     header{
         padding: 15px 20px;
         flex-wrap: wrap;
         height: auto;
         gap: 15px;
+    }
+
+    .brand{
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .buton{
+        margin: 0 auto;
     }
 
     nav ul{
@@ -881,6 +1005,10 @@ nav ul li a:hover{
 
     .text h1{
         font-size: 35px;
+    }
+
+    .feature, .why-item{
+        border-right: none;
     }
 
     .features, .products, .services, .gallery, .why-us{

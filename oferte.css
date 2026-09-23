@@ -19,6 +19,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .brand{
@@ -89,6 +93,7 @@ nav ul li a:hover{
     width: 100%;
     background-color: rgb(16, 16, 16);
     padding: 80px 50px;
+    margin-top: 90px;
 }
 
 .offer-content{
@@ -411,7 +416,84 @@ nav ul li a:hover{
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-@media(max-width:768px){
+@media(min-width: 769px) and (max-width: 1024px){
+    header{
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .button{
+        margin: 0 auto;
+    }
+
+    .offer{
+        padding: 70px 30px;
+    }
+
+    .offer-content{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .offer-title{
+        width: 100%;
+    }
+
+    .offer-title h1{
+        font-size: 42px;
+    }
+
+    .offer-info{
+        width: 100%;
+    }
+
+    .offer-form-section{
+        padding: 60px 30px;
+    }
+
+    .form-container{
+        padding: 40px 30px;
+    }
+
+    .contact-section{
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-buttons{
+        width: 100%;
+    }
+
+    .contact-buttons a{
+        flex: 1;
+        text-align: center;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px 30px;
+    }
+
+    .footer-logo{
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 768px){
     header{
         padding: 15px 20px;
         height: auto;
@@ -419,10 +501,23 @@ nav ul li a:hover{
         gap: 15px;
     }
 
+    .brand{
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px 15px;
+    }
+
+    .button{
+        margin: 0 auto;
     }
 
     .offer{
