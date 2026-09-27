@@ -94,7 +94,7 @@
                     </p>
                 </div>
 
-                <form class="offer-form">
+                <form class="offer-form" id="offerForm">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">
@@ -147,6 +147,37 @@
                     </p>
 
                 </form>
+
+
+                <script>
+                    document.getElementById("offerForm").addEventListener("submit", function(event){
+                        event.preventDefault();
+                        
+                        const name = document.getElementById("name").value.trim();
+                        const product = document.getElementById("product").value;
+                        const location = document.getElementById("location").value.trim();
+                        const message = document.getElementById("message").value.trim();
+                        const phoneNumber = "38345475722";
+                        const whatsappMessage = `Përshëndetje NTP BLERI, 
+
+                        Dëshiroj të kërkoj një ofertë.
+
+                        Emri dhe Mbiemri: ${name}
+                        Produkti: ${product}
+                        Lokacioni: ${location}
+
+                        Mesazhi: 
+                        ${message || "Nuk ka mesazh shtesë."}
+                        
+                        Faleminderit!`;
+
+                        const encodedMessage = encodeURIComponent(whatsappMessage);
+                        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                        window.open(whatsappURL, "_blank");
+                    });
+                </script>
+
+
             </div>
         </section>
 

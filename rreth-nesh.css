@@ -103,7 +103,7 @@ nav ul li a:hover{
 
 .about{
     width: 100%;
-    padding: 140px 50px 60px 50px;
+    padding: 190px 50px 100px;
     background-color: rgb(16, 16, 16);
     text-align: center;
 }
@@ -115,7 +115,7 @@ nav ul li a:hover{
 
 .about-text h1{
     color: white;
-    font-size: 40px;
+    font-size: clamp(30px, 4vw, 40px);
     font-weight: 700;
     padding: 0 0 10px 0;
 }
@@ -129,7 +129,7 @@ nav ul li a:hover{
 
 .about-text p{
     color: #d8d8d8;
-    font-size: 20px;
+    font-size: clamp(16px, 1.5vw, 20px);
     margin: 0;
 }
 
@@ -154,7 +154,7 @@ nav ul li a:hover{
 
 .about-image img{
     width: 100%;
-    height: 350px;
+    height: clamp(250px, 30vw, 350px);
     object-fit: cover;
     display: block;
 }
@@ -167,7 +167,7 @@ nav ul li a:hover{
 
 .about-content .about-text h2{
     color: #161616;
-    font-size: 30px;
+    font-size: clamp(26px, 3vw, 30px);
     font-weight: 700;
     margin: 0 0 10px 0;
 }
@@ -199,7 +199,7 @@ nav ul li a:hover{
 
 .about-title h2{
     color: #161616;
-    font-size: 30px;
+    font-size: clamp(26px, 3vw, 30px);
     font-weight: 700;
     margin: 0 0 10px 0;
 }
@@ -213,7 +213,7 @@ nav ul li a:hover{
 
 .about-title p{
     color: #555;
-    font-size: 20px;
+    font-size: clamp(16px, 1.5vw, 20px);
     margin: 0;
 }
 
@@ -281,7 +281,7 @@ nav ul li a:hover{
 
 .europe-text h2{
     color: white;
-    font-size: 30px;
+    font-size: clamp(26px, 3vw, 30px);
     font-weight: 700;
     margin: 0 0 10px 0;
 }
@@ -385,7 +385,7 @@ nav ul li a:hover{
     }
 
     .about{
-        padding: 150px 30px 60px;
+        padding: 200px 30px 60px;
     }
 
     .about-text h1{
@@ -401,7 +401,7 @@ nav ul li a:hover{
     }
 
     .about-image,
-    .about-content, .about-text{
+    .about-content .about-text{
         width: 50%;
     }
 
@@ -438,7 +438,7 @@ nav ul li a:hover{
 @media(max-width: 768px){
     #section-1{
         height: auto;
-        min-height: 90px
+        min-height: 90px;
     }
 
     header{
@@ -468,7 +468,7 @@ nav ul li a:hover{
     }
 
     .about{
-        padding: 180px 20px 50px;
+        padding: 230px 20px 50px;
     }
 
     .about-text h1{
@@ -489,16 +489,12 @@ nav ul li a:hover{
     }
 
     .about-image,
-    .about-content, .about-text{
+    .about-content .about-text{
         width: 100%;
     }
 
     .about-image img{
-        height: 300px;
-    }
-
-    .about-content, .about-text h2{
-        font-size: 28px;
+        height: 250px;
     }
 
     .about-values{

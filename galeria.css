@@ -131,7 +131,7 @@ nav ul li a:hover{
 
 .gallery-content h1{
     color: white;
-    font-size: 50px;
+    font-size: clamp(30px, 4vw, 50px);
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -172,7 +172,7 @@ nav ul li a:hover{
 
 .gallery-title h2{
     color: #161616;
-    font-size: 30px;
+    font-size: clamp(26px, 3vw, 30px);
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -410,6 +410,11 @@ nav ul li a:hover{
         gap: 15px;
     }
 
+    #section-1{
+        height: auto;
+        min-height: 90px;
+    }
+
     nav{
         width: 100%;
     }
@@ -425,7 +430,7 @@ nav ul li a:hover{
     }
 
     .gallery{
-        margin-top: 90px;
+        margin-top: 130px;
         height: 400px;
     }
 
@@ -469,6 +474,11 @@ nav ul li a:hover{
         gap: 15px;
     }
 
+    #section-1{
+        height: auto;
+        min-height: 90px;
+    }
+
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
@@ -480,8 +490,12 @@ nav ul li a:hover{
         justify-content: center;
     }
 
+    .buton{
+        margin: 0 auto;
+    }
+
     .gallery{
-        margin-top: 90px;
+        margin-top: 130px;
         height: 400px;
     }
 
@@ -490,7 +504,7 @@ nav ul li a:hover{
     }
 
     .gallery-content h1{
-        font-size: 35px;
+        font-size: clamp(30px, 4vw, 50px);
     }
 
     .gallery-content p{
@@ -515,7 +529,7 @@ nav ul li a:hover{
     }
 
     .gallery-ask-content h2{
-        font-size: 25px;
+        font-size: clamp(25px, 3vw, 30px);
     }
 
     .footer-container{

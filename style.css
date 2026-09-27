@@ -1,3 +1,7 @@
+html{
+    scroll-padding-top: 110px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,8 +35,8 @@ header{
     max-width: 1500px;
     margin: 0 auto;
     padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
 }
 
@@ -70,8 +74,9 @@ header{
 nav ul{
     display: flex;
     align-items:center;
+    justify-content: center;
     list-style:none;
-    gap: 30px;
+    gap: 18px;
 }
 
 nav ul li a{
@@ -79,6 +84,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 nav ul li a:hover{
@@ -91,11 +97,12 @@ nav ul li a:hover{
     text-decoration: none;
     color: black;
     border: none;
-    padding: 13px 20px;
+    padding: 8px 15px;
     font-size: 13px;
     font-weight: bold;
-    cursor: pointer;
     border-radius: 5px;
+    white-space: nowrap;
+    margin-left: 25px;
 }
 
 .buton:hover{
@@ -105,7 +112,7 @@ nav ul li a:hover{
 #section-2{
     position: relative;
     width: 100%;
-    height: 600px;
+    height: clamp(500px, 75vh, 600px);
     overflow: hidden;
     margin-top: 90px;
 }
@@ -137,12 +144,12 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     z-index: 2;
-    width: 500px;
+    width: min(500px, 88%);
 }
 
 .text h1{
     color: white;
-    font-size: 50px;
+    font-size: clamp(30px, 4vw, 50px);
     line-height: 1.1;
     margin-bottom: 20px;
 }
@@ -153,7 +160,7 @@ nav ul li a:hover{
 
 .description{
     color: white;
-    font-size: 15px;
+    font-size: clamp(14px, 1.3vw, 15px);
     line-height: 1.5;
     max-width: 450px;
     margin-bottom: 30px;
@@ -256,12 +263,12 @@ nav ul li a:hover{
     scroll-margin-top: 90px;
 }
 
-.products-tittle{
+.products-title{
     text-align: center;
     margin-bottom: 30px;
 }
 
-.products-tittle h2{
+.products-title h2{
     color: #161616;
     font-size: 30px;
     font-weight: 700;
@@ -275,7 +282,7 @@ nav ul li a:hover{
     margin: 0 auto 15px auto;
 }
 
-.products-tittle p{
+.products-title p{
     color: #555;
     font-size: 15px;
     margin: 0;
@@ -859,6 +866,7 @@ nav ul li a:hover{
 @media (min-width: 769px) and (max-width: 1024px){
     header{
         padding: 15px 30px;
+        display: flex;
         flex-wrap: wrap;
         height: auto;
         gap: 15px;
@@ -871,7 +879,7 @@ nav ul li a:hover{
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 15px;
+        gap: 8px 12px;
     }
 
     .buton{
@@ -879,17 +887,8 @@ nav ul li a:hover{
     }
 
     #section-2{
-        margin-top: 90px;
+        margin-top: 190px;
         height: 550px;
-    }
-
-    .text{
-        left: 40px;
-        width: 500px;
-    }
-
-    .text h1{
-        font-size: 42px;
     }
 
     .features{
@@ -969,6 +968,7 @@ nav ul li a:hover{
 @media (max-width:768px){
     header{
         padding: 15px 20px;
+        display: flex;
         flex-wrap: wrap;
         height: auto;
         gap: 15px;
@@ -987,24 +987,33 @@ nav ul li a:hover{
         margin: 0 auto;
     }
 
+    .buttons{
+        flex-direction: column;
+        width: min(100%, 350px);
+    }
+
+    .button-1, .button-2{
+        width: 100%;
+        text-align: center;
+    }
+
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 15px;
+        gap: 8px 12px;
     }
 
     #section-2{
-        margin-top: 90px;
-        height: 550px;
+        width: 100%;
+        height: clamp(500px, 75vh, 600px);
+        overflow: hidden;
+        margin-top: 220px;
     }
 
     .text{
-        left: 25px;
-        width: calc(100% - 50px);
-    }
-
-    .text h1{
-        font-size: 35px;
+        left: 5%;
+        width: 90%;
+        max-width: 500px;
     }
 
     .feature, .why-item{
@@ -1031,6 +1040,14 @@ nav ul li a:hover{
     .offer-section{
         flex-direction: column;
         text-align: center;
+    }
+
+    .offer-text p{
+        font-size: 15px;
+    }
+
+    .offer-text p br{
+        display: none;
     }
 
     .footer-container{

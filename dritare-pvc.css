@@ -14,7 +14,7 @@ header{
     width: 100%;
     height: 90px;
     background-color: rgb(16, 16, 16);
-    padding: 0 50px;
+    padding: 0 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +59,7 @@ nav ul{
     display: flex;
     align-items:center;
     list-style:none;
-    gap: 30px;
+    gap: 16px;
 }
 
 nav ul li a{
@@ -67,6 +67,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 nav ul li a:hover{
@@ -79,11 +80,13 @@ nav ul li a:hover{
     text-decoration: none;
     color: black;
     border: none;
-    padding: 13px 20px;
+    padding: 9px 15px;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .buton:hover{
@@ -210,7 +213,7 @@ nav ul li a:hover{
 .footer-container{
     width: 100%;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     gap: 60px;
     padding: 0 80px 30px 80px;
     align-items: start;
@@ -302,8 +305,6 @@ nav ul li a:hover{
 
 .social-icon a:hover{
     background-color:  #eda200;
-    border-color:  #d9a928;
-    color: #10151a;
 }
 
 .copyright{
@@ -316,6 +317,11 @@ nav ul li a:hover{
 }
 
 @media(min-width: 769px) and (max-width: 1024px){
+    #section-1{
+        height: auto;
+        min-height: 90px;
+    }
+
     header{
         padding: 15px 30px;
         flex-wrap: wrap;
@@ -330,13 +336,19 @@ nav ul li a:hover{
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 15px;
+        gap: 8px 12px;
+    }
+
+    .buton{
+        margin: 0 auto;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 
     .product-detail{
         flex-direction: column;
         gap: 40px;
-        padding: 180px 30px 60px;
+        padding: 200px 30px 60px;
     }
 
     .product-detail-image,  .product-detail-text{
@@ -353,6 +365,10 @@ nav ul li a:hover{
 }
 
 @media (max-width: 768px){
+    #section-1{
+        height: auto;
+        min-height: 90px;
+    }
     header{
         padding: 15px 20px;
         flex-wrap: wrap;
@@ -372,17 +388,19 @@ nav ul li a:hover{
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 15px;
+        gap: 8px 12px;
     }
 
     .buton{
         margin: 0 auto;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 
     .product-detail{
         flex-direction: column;
         gap: 35px;
-        padding: 220px 20px 50px;
+        padding: 230px 20px 50px;
     }
 
     .product-detail-image,  .product-detail-text{
