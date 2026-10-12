@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="oferte.css">
     <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kërko Ofertë</title>
+    <title>Kërko Ofertë | NTP Bleri</title>
 </head>
 <body>
 
@@ -155,22 +155,25 @@
                         event.preventDefault();
                         
                         const name = document.getElementById("name").value.trim();
-                        const product = document.getElementById("product").value;
+                        const productSelect = document.getElementById("product");
+                        const product = productSelect.options[productSelect.selectedIndex].text.trim();
                         const location = document.getElementById("location").value.trim();
                         const message = document.getElementById("message").value.trim();
                         const phoneNumber = "38345475722";
-                        const whatsappMessage = `Përshëndetje NTP BLERI, 
-
-                        Dëshiroj të kërkoj një ofertë.
-
-                        Emri dhe Mbiemri: ${name}
-                        Produkti: ${product}
-                        Lokacioni: ${location}
-
-                        Mesazhi: 
-                        ${message || "Nuk ka mesazh shtesë."}
-                        
-                        Faleminderit!`;
+                        const whatsappMessage = [
+                            "Përshëndetje, NTP Bleri!",
+                            "",
+                            "Dëshiroj të kërkoj një ofertë.",
+                            "",
+                            `Emri dhe mbiemri: ${name}`,
+                            `Produkti: ${product}`,
+                            `Lokacioni: ${location}`,
+                            "",
+                            "Detajet e projektit:",
+                            message || "Nuk kam detaje shtesë për momentin.",
+                            "",
+                            "Faleminderit!"
+                        ].join("\n");
 
                         const encodedMessage = encodeURIComponent(whatsappMessage);
                         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -206,7 +209,7 @@
             </div>
 
             <div class="footer-column">
-                <h3>LINKE TË SHPEJTA</h3>
+                <h3>LINQE TË SHPEJTA</h3>
 
                 <a href="index.html">BALLINA</a>
                 <a href="index.html#section-4">PRODUKTET</a>

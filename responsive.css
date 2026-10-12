@@ -153,7 +153,8 @@ img{
 
     .blur-section{
         width: 100%;
-        background: linear-gradient(to right, rgba(10, 15, 20, 0.96), rgba(10, 15, 20, 0.82));
+        background: linear-gradient(to right, rgba(10, 15, 20, 0.88), rgba(10, 15, 20, 0.5) 55%, rgba(10, 15, 20, 0.12));
+        backdrop-filter: none;
     }
 
     .text{
@@ -295,4 +296,15 @@ img{
         max-width: 100%;
         font-size: 12px;
     }
+}
+
+.product-detail-image img[src$="DyerHyrese.jpg"],
+.product-detail-image img[src$="DritarePVC.jpg"],
+.product-detail-image img[src$="DyerRreshqtese.jpg"],
+.product-detail-image img[src$="RolodheGrila.jpg"]{
+    width: min(100%, 320px);
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    margin: 0 auto;
 }
